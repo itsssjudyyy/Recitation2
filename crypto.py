@@ -4,6 +4,7 @@
 # Computer Science
 # CSCI-121 Elements of Computer Programming II
 # Recitation 2 - Input/Output and Crypto
+
 # ***************************************************
 
 def crypto(filename, cypher):
