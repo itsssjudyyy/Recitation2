@@ -8,8 +8,13 @@
 # ***************************************************
 
 def crypto(filename, cypher):
-    pass # TODO please replace this line with your code
-
+    with open(filename, 'r') as fh:
+        for line in fh:
+            eLine = ''
+            for ch in line:
+                eLine += cypher(ch)
+    with open(filename, 'w') as fhenc:
+        fhenc.write(eLine)
 # DO NOT touch the lines below
 if __name__ == "__main__":
     crypto('hello.txt', lambda x: chr((ord(x) + 5) % 256))
